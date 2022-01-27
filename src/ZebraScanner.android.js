@@ -5,7 +5,7 @@ const { ZebraScanner } = NativeModules
 
 const BARCODE_SCANNED_EVENT = 'barcodeScanned'
 
-const scanListeners = []
+let scanListeners = []
 
 
 function addScanListener(callback) {
